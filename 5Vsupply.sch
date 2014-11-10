@@ -1,0 +1,194 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:contrib
+LIBS:valves
+LIBS:ssm2164
+LIBS:c2
+LIBS:c2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3800 3300 0    60   Input ~ 0
+Vin
+Text HLabel 3700 4200 1    60   BiDi ~ 0
+GNDPWR
+$Comp
+L GNDPWR #PWR?
+U 1 1 54608A34
+P 5550 4600
+F 0 "#PWR?" H 5550 4650 40  0001 C CNN
+F 1 "GNDPWR" H 5550 4520 40  0000 C CNN
+F 2 "" H 5550 4600 60  0000 C CNN
+F 3 "" H 5550 4600 60  0000 C CNN
+	1    5550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 54608AEC
+P 4300 3850
+F 0 "C?" H 4300 3950 40  0000 L CNN
+F 1 "22u" H 4306 3765 40  0000 L CNN
+F 2 "" H 4338 3700 30  0000 C CNN
+F 3 "" H 4300 3850 60  0000 C CNN
+F 4 "2mΩ" H 4400 3700 39  0000 C CNN "ESR"
+	1    4300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3650 4300 3300
+Wire Wire Line
+	3800 3300 4350 3300
+Wire Wire Line
+	4300 4050 4300 4400
+$Comp
+L C C?
+U 1 1 54608B55
+P 5750 3550
+F 0 "C?" V 5600 3500 40  0000 L CNN
+F 1 "100n" V 5900 3450 40  0000 L CNN
+F 2 "" H 5788 3400 30  0000 C CNN
+F 3 "" H 5750 3550 60  0000 C CNN
+F 4 "0.28Ω" V 6000 3550 39  0000 C CNN "ESR"
+	1    5750 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 54608BA0
+P 7100 3850
+F 0 "C?" H 7100 3950 40  0000 L CNN
+F 1 "47u" H 7106 3765 40  0000 L CNN
+F 2 "" H 7138 3700 30  0000 C CNN
+F 3 "" H 7100 3850 60  0000 C CNN
+F 4 "1.71mΩ" H 7250 3700 39  0000 C CNN "ESR"
+	1    7100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54608C09
+P 6650 3550
+F 0 "R?" V 6730 3550 40  0000 C CNN
+F 1 "56.2k" V 6657 3551 40  0000 C CNN
+F 2 "" V 6580 3550 30  0000 C CNN
+F 3 "" H 6650 3550 30  0000 C CNN
+	1    6650 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54608C56
+P 6650 4150
+F 0 "R?" V 6730 4150 40  0000 C CNN
+F 1 "10k" V 6657 4151 40  0000 C CNN
+F 2 "" V 6580 4150 30  0000 C CNN
+F 3 "" H 6650 4150 30  0000 C CNN
+	1    6650 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 54608CA7
+P 6250 3300
+F 0 "L?" V 6200 3300 40  0000 C CNN
+F 1 "3.3uH" V 6350 3300 40  0000 C CNN
+F 2 "" H 6250 3300 60  0000 C CNN
+F 3 "" H 6250 3300 60  0000 C CNN
+F 4 "0.026Ω" V 6450 3300 39  0000 C CNN "DCR"
+F 5 "XAL4030-332MEB" V 6250 3300 60  0001 C CNN "Part"
+F 6 "Coilcraft" V 6250 3300 60  0001 C CNN "Manufacturer"
+	1    6250 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3700 4400 7100 4400
+Wire Wire Line
+	7100 4400 7100 4050
+Connection ~ 6650 4400
+Wire Wire Line
+	6650 3900 6650 3800
+Wire Wire Line
+	7100 3300 7100 3650
+Connection ~ 6650 3300
+Text HLabel 7350 3300 2    60   Output ~ 0
+Vout
+Connection ~ 7100 3300
+Wire Wire Line
+	3700 4400 3700 4200
+Connection ~ 4300 4400
+Wire Wire Line
+	5550 4600 5550 4400
+Connection ~ 5550 4400
+Text Label 6650 3850 2    60   ~ 0
+Vfb
+$Comp
+L TPS563209DDCR U?
+U 1 1 546091FF
+P 4850 3500
+F 0 "U?" H 4550 3850 40  0000 C CNN
+F 1 "TPS563209DDCR" H 5000 3850 40  0000 C CNN
+F 2 "SOT-23" H 4850 3550 35  0000 C CIN
+F 3 "" H 4850 3500 60  0000 C CNN
+	1    4850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3550 5350 3900
+Wire Wire Line
+	5350 3900 6650 3900
+Wire Wire Line
+	5350 3300 5950 3300
+Wire Wire Line
+	5950 3300 5950 3550
+Wire Wire Line
+	5350 3400 5550 3400
+Wire Wire Line
+	5550 3400 5550 3550
+Wire Wire Line
+	6550 3300 7350 3300
+Connection ~ 4300 3300
+Wire Wire Line
+	4350 3450 4300 3450
+Connection ~ 4300 3450
+Wire Wire Line
+	4850 3850 4850 4400
+Connection ~ 4850 4400
+$EndSCHEMATC

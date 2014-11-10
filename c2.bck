@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS563209DDCR
+D TPS77701D, 750 mA Fast-Transient Low Dropout Voltage Regulator, Adjustable Output 1.5-5.5V, SOIC8
+K 750mA LDO Regulator Adjustable Positive
+F http://www.ti.com/lit/ds/symlink/tps77725.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,479 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:contrib
+LIBS:valves
+LIBS:ssm2164
+LIBS:c2
+LIBS:c2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1200 2000 0    60   Input ~ 0
+V+
+Text HLabel 1300 4200 0    60   Input ~ 0
+Vgnd
+Text HLabel 1200 3200 0    60   Input ~ 0
+V-
+$Comp
+L SSM2164P IC?
+U 1 1 5460DF39
+P 6300 1700
+F 0 "IC?" H 6500 1900 50  0000 L BNN
+F 1 "SSM2164P" H 6500 1400 50  0000 L BNN
+F 2 "ssm2164-DIL16" H 6300 1850 50  0001 C CNN
+F 3 "" H 6300 1700 60  0000 C CNN
+	1    6300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SSM2164P IC?
+U 2 1 5460DFDA
+P 6300 3000
+F 0 "IC?" H 6500 3200 50  0000 L BNN
+F 1 "SSM2164P" H 6500 2700 50  0000 L BNN
+F 2 "ssm2164-DIL16" H 6300 3150 50  0001 C CNN
+F 3 "" H 6300 3000 60  0000 C CNN
+	2    6300 3000
+	1    0    0    -1  
+$EndComp
+Text HLabel 1200 2700 0    60   Input ~ 0
+Vc
+$Comp
+L TL074 U?
+U 1 1 5460E06E
+P 2700 2600
+F 0 "U?" H 2750 2800 60  0000 C CNN
+F 1 "TL074" H 2850 2400 50  0000 C CNN
+F 2 "" H 2700 2600 60  0000 C CNN
+F 3 "" H 2700 2600 60  0000 C CNN
+	1    2700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5460E11A
+P 1650 2700
+F 0 "R?" V 1730 2700 40  0000 C CNN
+F 1 "R" V 1657 2701 40  0000 C CNN
+F 2 "" V 1580 2700 30  0000 C CNN
+F 3 "" H 1650 2700 30  0000 C CNN
+	1    1650 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5460E17B
+P 2600 3600
+F 0 "R?" V 2680 3600 40  0000 C CNN
+F 1 "R" V 2607 3601 40  0000 C CNN
+F 2 "" V 2530 3600 30  0000 C CNN
+F 3 "" H 2600 3600 30  0000 C CNN
+	1    2600 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L TL074 U?
+U 2 1 5460E3A6
+P 3550 1300
+F 0 "U?" H 3600 1500 60  0000 C CNN
+F 1 "TL074" H 3700 1100 50  0000 C CNN
+F 2 "" H 3550 1300 60  0000 C CNN
+F 3 "" H 3550 1300 60  0000 C CNN
+	2    3550 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL074 U?
+U 3 1 5460E44B
+P 8100 2400
+F 0 "U?" H 8150 2600 60  0000 C CNN
+F 1 "TL074" H 8250 2200 50  0000 C CNN
+F 2 "" H 8100 2400 60  0000 C CNN
+F 3 "" H 8100 2400 60  0000 C CNN
+	3    8100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D?
+U 1 1 5460E4AA
+P 4400 1300
+F 0 "D?" H 4400 1400 40  0000 C CNN
+F 1 "DIODE" H 4400 1200 40  0000 C CNN
+F 2 "" H 4400 1300 60  0000 C CNN
+F 3 "" H 4400 1300 60  0000 C CNN
+	1    4400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D?
+U 1 1 5460E50B
+P 3550 2600
+F 0 "D?" H 3550 2700 40  0000 C CNN
+F 1 "DIODE" H 3550 2500 40  0000 C CNN
+F 2 "" H 3550 2600 60  0000 C CNN
+F 3 "" H 3550 2600 60  0000 C CNN
+	1    3550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5460E59E
+P 5050 1700
+F 0 "R?" V 5130 1700 40  0000 C CNN
+F 1 "R" V 5057 1701 40  0000 C CNN
+F 2 "" V 4980 1700 30  0000 C CNN
+F 3 "" H 5050 1700 30  0000 C CNN
+	1    5050 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5460E642
+P 4600 3100
+F 0 "R?" V 4680 3100 40  0000 C CNN
+F 1 "R" V 4607 3101 40  0000 C CNN
+F 2 "" V 4530 3100 30  0000 C CNN
+F 3 "" H 4600 3100 30  0000 C CNN
+	1    4600 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L DIODE D?
+U 1 1 5460E984
+P 2600 3350
+F 0 "D?" H 2600 3450 40  0000 C CNN
+F 1 "DIODE" H 2600 3250 40  0000 C CNN
+F 2 "" H 2600 3350 60  0000 C CNN
+F 3 "" H 2600 3350 60  0000 C CNN
+	1    2600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5460ED2C
+P 4150 3050
+F 0 "C?" H 4150 3150 40  0000 L CNN
+F 1 "C" H 4156 2965 40  0000 L CNN
+F 2 "" H 4188 2900 30  0000 C CNN
+F 3 "" H 4150 3050 60  0000 C CNN
+	1    4150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5460F75D
+P 4750 2000
+F 0 "C?" H 4750 2100 40  0000 L CNN
+F 1 "C" H 4756 1915 40  0000 L CNN
+F 2 "" H 4788 1850 30  0000 C CNN
+F 3 "" H 4750 2000 60  0000 C CNN
+	1    4750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 546102F8
+P 8350 2900
+F 0 "R?" V 8430 2900 40  0000 C CNN
+F 1 "R" V 8357 2901 40  0000 C CNN
+F 2 "" V 8280 2900 30  0000 C CNN
+F 3 "" H 8350 2900 30  0000 C CNN
+	1    8350 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5461038B
+P 8350 3200
+F 0 "C?" H 8350 3300 40  0000 L CNN
+F 1 "C" H 8356 3115 40  0000 L CNN
+F 2 "" H 8388 3050 30  0000 C CNN
+F 3 "" H 8350 3200 60  0000 C CNN
+	1    8350 3200
+	0    1    1    0   
+$EndComp
+Text HLabel 9100 1300 2    60   Output ~ 0
+Vcp
+Text HLabel 9050 1900 2    60   Output ~ 0
+Vcn
+$Comp
+L R R?
+U 1 1 546129FC
+P 5750 3000
+F 0 "R?" V 5830 3000 40  0000 C CNN
+F 1 "R" V 5757 3001 40  0000 C CNN
+F 2 "" V 5680 3000 30  0000 C CNN
+F 3 "" H 5750 3000 30  0000 C CNN
+	1    5750 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 54612A9C
+P 5750 1700
+F 0 "R?" V 5830 1700 40  0000 C CNN
+F 1 "R" V 5757 1701 40  0000 C CNN
+F 2 "" V 5680 1700 30  0000 C CNN
+F 3 "" H 5750 1700 30  0000 C CNN
+	1    5750 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 54612B1A
+P 6050 2000
+F 0 "R?" V 6130 2000 40  0000 C CNN
+F 1 "R" V 6057 2001 40  0000 C CNN
+F 2 "" V 5980 2000 30  0000 C CNN
+F 3 "" H 6050 2000 30  0000 C CNN
+	1    6050 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 54612B82
+P 6050 3300
+F 0 "R?" V 6130 3300 40  0000 C CNN
+F 1 "R" V 6057 3301 40  0000 C CNN
+F 2 "" V 5980 3300 30  0000 C CNN
+F 3 "" H 6050 3300 30  0000 C CNN
+	1    6050 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 54612BEA
+P 5750 2300
+F 0 "C?" H 5750 2400 40  0000 L CNN
+F 1 "C" H 5756 2215 40  0000 L CNN
+F 2 "" H 5788 2150 30  0000 C CNN
+F 3 "" H 5750 2300 60  0000 C CNN
+	1    5750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 54612C9F
+P 6050 3800
+F 0 "C?" H 6050 3900 40  0000 L CNN
+F 1 "C" H 6056 3715 40  0000 L CNN
+F 2 "" H 6088 3650 30  0000 C CNN
+F 3 "" H 6050 3800 60  0000 C CNN
+	1    6050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2700 2200 2700
+Wire Wire Line
+	2050 2700 2050 3600
+Wire Wire Line
+	2050 3350 2400 3350
+Connection ~ 2050 2700
+Wire Wire Line
+	2050 3600 2350 3600
+Connection ~ 2050 3350
+Wire Wire Line
+	2800 3350 3300 3350
+Wire Wire Line
+	3300 3350 3300 2600
+Wire Wire Line
+	3200 2600 3350 2600
+Connection ~ 3300 2600
+Wire Wire Line
+	3850 2600 3850 3600
+Wire Wire Line
+	3850 3600 2850 3600
+Connection ~ 3850 2600
+Wire Wire Line
+	1200 2000 2600 2000
+Wire Wire Line
+	2600 2000 2600 2200
+Wire Wire Line
+	1200 3200 3250 3200
+Wire Wire Line
+	2600 3200 2600 3000
+Wire Wire Line
+	1300 4200 7450 4200
+Wire Wire Line
+	2000 4200 2000 2500
+Wire Wire Line
+	2000 2500 2200 2500
+Wire Wire Line
+	4150 2600 4150 2850
+Wire Wire Line
+	3750 2600 6300 2600
+Wire Wire Line
+	4600 2600 4600 2850
+Connection ~ 4150 2600
+Wire Wire Line
+	4150 4200 4150 3250
+Connection ~ 2000 4200
+Wire Wire Line
+	1200 2700 1400 2700
+Wire Wire Line
+	1300 2000 1300 700 
+Wire Wire Line
+	3450 700  3450 900 
+Connection ~ 1300 2000
+Wire Wire Line
+	3250 3200 3250 2300
+Wire Wire Line
+	3250 2300 3450 2300
+Wire Wire Line
+	3450 2300 3450 1700
+Connection ~ 2600 3200
+Wire Wire Line
+	1300 2700 1300 2250
+Wire Wire Line
+	1300 2250 1550 2250
+Wire Wire Line
+	1550 2250 1550 1200
+Wire Wire Line
+	1550 1200 3050 1200
+Connection ~ 1300 2700
+Wire Wire Line
+	4050 1300 4200 1300
+Wire Wire Line
+	4600 1300 9100 1300
+Wire Wire Line
+	5050 1300 5050 1450
+Wire Wire Line
+	5050 3350 4600 3350
+Connection ~ 4150 4200
+Wire Wire Line
+	4750 4200 4750 2200
+Wire Wire Line
+	4750 1300 4750 1800
+Connection ~ 4750 1300
+Wire Wire Line
+	3050 1400 3050 1750
+Wire Wire Line
+	3050 1750 4750 1750
+Connection ~ 4750 1750
+Wire Wire Line
+	6300 1300 6300 1400
+Connection ~ 5050 1300
+Wire Wire Line
+	6300 2400 6300 2700
+Connection ~ 4600 2600
+Wire Wire Line
+	6800 1700 6900 1700
+Wire Wire Line
+	6900 1700 6900 3000
+Wire Wire Line
+	6900 3000 6800 3000
+Wire Wire Line
+	8000 700  8000 2000
+Connection ~ 3450 700 
+Wire Wire Line
+	8000 2800 8000 3900
+Wire Wire Line
+	8000 3900 1700 3900
+Wire Wire Line
+	1700 3900 1700 3200
+Connection ~ 1700 3200
+Wire Wire Line
+	7600 2500 6900 2500
+Connection ~ 6900 2500
+Wire Wire Line
+	7450 4200 7450 2300
+Wire Wire Line
+	7450 2300 7600 2300
+Connection ~ 4750 4200
+Wire Wire Line
+	8600 2400 8700 2400
+Wire Wire Line
+	8700 2400 8700 4700
+Wire Wire Line
+	8700 3200 8550 3200
+Wire Wire Line
+	8600 2900 8700 2900
+Connection ~ 8700 2900
+Wire Wire Line
+	8100 2900 7500 2900
+Wire Wire Line
+	7500 2500 7500 3200
+Connection ~ 7500 2500
+Wire Wire Line
+	7500 3200 8150 3200
+Connection ~ 7500 2900
+Wire Wire Line
+	5050 1950 5050 4700
+Wire Wire Line
+	5050 4700 8700 4700
+Connection ~ 5050 3350
+Connection ~ 8700 3200
+Wire Wire Line
+	1300 700  8000 700 
+Connection ~ 6300 1300
+Wire Wire Line
+	9050 1900 7100 1900
+Wire Wire Line
+	7100 1900 7100 2400
+Wire Wire Line
+	7100 2400 6300 2400
+Connection ~ 6300 2600
+Wire Wire Line
+	6050 3550 6050 3600
+Wire Wire Line
+	6050 4000 6050 4200
+Connection ~ 6050 4200
+Wire Wire Line
+	6000 3000 6100 3000
+Wire Wire Line
+	6050 3000 6050 3050
+Connection ~ 6050 3000
+Wire Wire Line
+	6000 1700 6100 1700
+Wire Wire Line
+	6050 1700 6050 1750
+Connection ~ 6050 1700
+Wire Wire Line
+	5750 2100 5950 2100
+Wire Wire Line
+	5950 2100 5950 2250
+Wire Wire Line
+	5950 2250 6050 2250
+Wire Wire Line
+	5750 2500 4750 2500
+Connection ~ 4750 2500
+Wire Wire Line
+	5500 1700 5500 3000
+$EndSCHEMATC
