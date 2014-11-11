@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 9
 Title ""
 Date ""
 Rev ""
@@ -326,8 +326,6 @@ Wire Wire Line
 Wire Wire Line
 	2600 2000 2600 2200
 Wire Wire Line
-	1200 3200 3250 3200
-Wire Wire Line
 	2600 3200 2600 3000
 Wire Wire Line
 	1300 4200 7450 4200
@@ -348,26 +346,7 @@ Connection ~ 2000 4200
 Wire Wire Line
 	1200 2700 1400 2700
 Wire Wire Line
-	1300 2000 1300 700 
-Wire Wire Line
 	3450 700  3450 900 
-Connection ~ 1300 2000
-Wire Wire Line
-	3250 3200 3250 2300
-Wire Wire Line
-	3250 2300 3450 2300
-Wire Wire Line
-	3450 2300 3450 1700
-Connection ~ 2600 3200
-Wire Wire Line
-	1300 2700 1300 2250
-Wire Wire Line
-	1300 2250 1550 2250
-Wire Wire Line
-	1550 2250 1550 1200
-Wire Wire Line
-	1550 1200 3050 1200
-Connection ~ 1300 2700
 Wire Wire Line
 	4050 1300 4200 1300
 Wire Wire Line
@@ -400,16 +379,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 3000 6800 3000
 Wire Wire Line
-	8000 700  8000 2000
-Connection ~ 3450 700 
-Wire Wire Line
-	8000 2800 8000 3900
-Wire Wire Line
-	8000 3900 1700 3900
-Wire Wire Line
-	1700 3900 1700 3200
-Connection ~ 1700 3200
-Wire Wire Line
 	7600 2500 6900 2500
 Connection ~ 6900 2500
 Wire Wire Line
@@ -440,8 +409,6 @@ Wire Wire Line
 	5050 4700 8700 4700
 Connection ~ 5050 3350
 Connection ~ 8700 3200
-Wire Wire Line
-	1300 700  8000 700 
 Connection ~ 6300 1300
 Wire Wire Line
 	9050 1900 7100 1900
@@ -476,4 +443,99 @@ Wire Wire Line
 Connection ~ 4750 2500
 Wire Wire Line
 	5500 1700 5500 3000
+Text HLabel 2900 1200 0    60   Input ~ 0
+Vc
+Wire Wire Line
+	2900 1200 3050 1200
+Text HLabel 7850 3400 0    60   Input ~ 0
+V-
+Wire Wire Line
+	7850 3400 8000 3400
+Wire Wire Line
+	8000 3400 8000 2800
+Wire Wire Line
+	1200 3200 2600 3200
+Text HLabel 3350 1950 0    60   Input ~ 0
+V-
+Wire Wire Line
+	3350 1950 3450 1950
+Wire Wire Line
+	3450 1950 3450 1700
+Text HLabel 3150 700  0    60   Input ~ 0
+V+
+Wire Wire Line
+	3150 700  3450 700 
+Text HLabel 7800 2000 0    60   Input ~ 0
+V+
+Wire Wire Line
+	7800 2000 8000 2000
+$Comp
+L SSM2164P IC?
+U 3 1 5462C12D
+P 4500 5450
+F 0 "IC?" H 4700 5650 50  0000 L BNN
+F 1 "SSM2164P" H 4700 5150 50  0000 L BNN
+F 2 "ssm2164-DIL16" H 4500 5600 50  0001 C CNN
+F 3 "" H 4500 5450 60  0000 C CNN
+	3    4500 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SSM2164P IC?
+U 4 1 5462C1A4
+P 4450 6500
+F 0 "IC?" H 4650 6700 50  0000 L BNN
+F 1 "SSM2164P" H 4650 6200 50  0000 L BNN
+F 2 "ssm2164-DIL16" H 4450 6650 50  0001 C CNN
+F 3 "" H 4450 6500 60  0000 C CNN
+	4    4450 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SSM2164P IC?
+U 5 1 5462C219
+P 2500 5650
+F 0 "IC?" H 2700 5850 50  0000 L BNN
+F 1 "SSM2164P" H 2700 5350 50  0000 L BNN
+F 2 "ssm2164-DIL16" H 2500 5800 50  0001 C CNN
+F 3 "" H 2500 5650 60  0000 C CNN
+	5    2500 5650
+	1    0    0    -1  
+$EndComp
+Text HLabel 3600 5850 2    60   Input ~ 0
+Vgnd
+Text HLabel 2250 6250 0    60   Input ~ 0
+V-
+Text HLabel 2150 5350 0    60   Input ~ 0
+V+
+Wire Wire Line
+	2150 5350 2500 5350
+Wire Wire Line
+	2250 6250 2500 6250
+Wire Wire Line
+	2500 6250 2500 6150
+Wire Wire Line
+	2800 5850 3600 5850
+NoConn ~ 4300 5450
+NoConn ~ 4500 5150
+NoConn ~ 5000 5450
+NoConn ~ 4950 6500
+NoConn ~ 4450 6200
+NoConn ~ 4250 6500
+$Comp
+L R R?
+U 1 1 5462C5A9
+P 3150 5650
+F 0 "R?" V 3230 5650 40  0000 C CNN
+F 1 "DNM" V 3157 5651 40  0000 C CNN
+F 2 "" V 3080 5650 30  0000 C CNN
+F 3 "" H 3150 5650 30  0000 C CNN
+	1    3150 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 5650 3400 5850
+Connection ~ 3400 5850
+Wire Wire Line
+	2900 5650 2800 5650
 $EndSCHEMATC

@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -46,61 +46,421 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1400 6150 850  650 
+S 2450 5800 850  650 
 U 54608912
 F0 "5V supply" 60
 F1 "5Vsupply.sch" 60
-F2 "Vin" I L 1400 6350 60 
-F3 "GNDPWR" B L 1400 6600 60 
-F4 "Vout" O R 2250 6350 60 
+F2 "Vin" I L 2450 6000 60 
+F3 "GNDPWR" B L 2450 6250 60 
+F4 "Vout" O R 3300 6000 60 
 $EndSheet
 $Sheet
-S 1400 5250 850  650 
+S 2450 4700 850  650 
 U 5460A54B
 F0 "24V supply" 60
 F1 "24Vsupply.sch" 60
-F2 "Vin" I L 1400 5400 60 
-F3 "GNDPWR" B L 1400 5750 60 
-F4 "Vout" O R 2250 5400 60 
+F2 "Vin" I L 2450 4850 60 
+F3 "GNDPWR" B L 2450 5200 60 
+F4 "Vout" O R 3300 4850 60 
 $EndSheet
 $Sheet
-S 3350 5800 950  700 
+S 1850 3250 950  700 
 U 5460DEE3
 F0 "Gain Compensation" 60
 F1 "gaincomp.sch" 60
-F2 "V+" I L 3350 5900 60 
-F3 "Vgnd" I L 3350 6050 60 
-F4 "V-" I L 3350 6200 60 
-F5 "Vc" I L 3350 6400 60 
-F6 "Vcp" O R 4300 6050 60 
-F7 "Vcn" O R 4300 6300 60 
+F2 "V+" I L 1850 3350 60 
+F3 "Vgnd" I L 1850 3500 60 
+F4 "V-" I L 1850 3650 60 
+F5 "Vc" I L 1850 3850 60 
+F6 "Vcp" O R 2800 3500 60 
+F7 "Vcn" O R 2800 3750 60 
 $EndSheet
 $Sheet
-S 3350 3200 700  1300
+S 3700 900  700  1300
 U 54613A38
 F0 "Left VCA" 60
 F1 "aleftvca.sch" 60
-F2 "V+" I L 3350 3300 60 
-F3 "Vgnd" I L 3350 3450 60 
-F4 "V-" I L 3350 3600 60 
-F5 "Vcp" I L 3350 3800 60 
-F6 "Vcn" I L 3350 4200 60 
-F7 "Ain" I L 3350 3950 60 
-F8 "Bin" I L 3350 4350 60 
-F9 "Out" O R 4050 4050 60 
+F2 "V+" I L 3700 1000 60 
+F3 "Vgnd" I L 3700 1150 60 
+F4 "V-" I L 3700 1300 60 
+F5 "Vcp" I L 3700 1500 60 
+F6 "Vcn" I L 3700 1900 60 
+F7 "Ain" I L 3700 1650 60 
+F8 "Bin" I L 3700 2050 60 
+F9 "Out" O R 4400 1750 60 
 $EndSheet
 $Sheet
-S 4350 3200 750  1300
+S 3650 2550 750  1300
 U 54615CF8
 F0 "Right VCA" 60
 F1 "rightvca.sch" 60
-F2 "V+" I L 4350 3300 60 
-F3 "Vgnd" I L 4350 3450 60 
-F4 "V-" I L 4350 3600 60 
-F5 "Vcp" I L 4350 3800 60 
-F6 "Vcn" I L 4350 4200 60 
-F7 "Ain" I L 4350 3950 60 
-F8 "Bin" I L 4350 4350 60 
-F9 "Out" O R 5100 4050 60 
+F2 "V+" I L 3650 2650 60 
+F3 "Vgnd" I L 3650 2800 60 
+F4 "V-" I L 3650 2950 60 
+F5 "Vcp" I L 3650 3150 60 
+F6 "Vcn" I L 3650 3550 60 
+F7 "Ain" I L 3650 3300 60 
+F8 "Bin" I L 3650 3700 60 
+F9 "Out" O R 4400 3400 60 
 $EndSheet
+$Sheet
+S 1650 1100 1150 950 
+U 5461D324
+F0 "Audio Input Stage" 60
+F1 "audioin.sch" 60
+F2 "ALeftIn" I L 1650 1200 60 
+F3 "Gnd" I L 1650 1900 60 
+F4 "ALeftOut" O R 2800 1200 60 
+F5 "ARightIn" I L 1650 1350 60 
+F6 "ARightOut" O R 2800 1350 60 
+F7 "BLeftIn" I L 1650 1500 60 
+F8 "BLeftOut" O R 2800 1500 60 
+F9 "BRightIn" I L 1650 1650 60 
+F10 "BRightOut" O R 2800 1650 60 
+$EndSheet
+$Sheet
+S 1150 6000 850  400 
+U 5461FD7D
+F0 "Power In" 60
+F1 "powerin.sch" 60
+F2 "Vin+" I L 1150 6100 60 
+F3 "Vin-" I L 1150 6250 60 
+F4 "GNDPWR" O R 2000 6250 60 
+F5 "Vin" O R 2000 6100 60 
+$EndSheet
+$Comp
+L CONN_02X20 P?
+U 1 1 54621823
+P 9800 4750
+F 0 "P?" H 9800 5800 50  0000 C CNN
+F 1 "Raspberry Pi" V 9800 4750 50  0000 C CNN
+F 2 "" H 9800 3800 60  0000 C CNN
+F 3 "" H 9800 3800 60  0000 C CNN
+	1    9800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL074 U?
+U 4 1 54627346
+P 5200 5050
+F 0 "U?" H 5250 5250 60  0000 C CNN
+F 1 "TL074" H 5350 4850 50  0000 C CNN
+F 2 "" H 5200 5050 60  0000 C CNN
+F 3 "" H 5200 5050 60  0000 C CNN
+	4    5200 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54627864
+P 4300 5250
+F 0 "R?" V 4380 5250 40  0000 C CNN
+F 1 "47k" V 4307 5251 40  0000 C CNN
+F 2 "" V 4230 5250 30  0000 C CNN
+F 3 "" H 4300 5250 30  0000 C CNN
+	1    4300 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54627939
+P 4300 4600
+F 0 "R?" V 4380 4600 40  0000 C CNN
+F 1 "47k" V 4307 4601 40  0000 C CNN
+F 2 "" V 4230 4600 30  0000 C CNN
+F 3 "" H 4300 4600 30  0000 C CNN
+	1    4300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5462982B
+P 4000 5300
+F 0 "C?" H 4000 5400 40  0000 L CNN
+F 1 "1µ" H 4006 5215 40  0000 L CNN
+F 2 "" H 4038 5150 30  0000 C CNN
+F 3 "" H 4000 5300 60  0000 C CNN
+	1    4000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5462A7E4
+P 6000 5050
+F 0 "R?" V 6080 5050 40  0000 C CNN
+F 1 "10" V 6007 5051 40  0000 C CNN
+F 2 "" V 5930 5050 30  0000 C CNN
+F 3 "" H 6000 5050 30  0000 C CNN
+	1    6000 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5462D01A
+P 6850 5250
+F 0 "C?" H 6850 5350 40  0000 L CNN
+F 1 "C" H 6856 5165 40  0000 L CNN
+F 2 "" H 6888 5100 30  0000 C CNN
+F 3 "" H 6850 5250 60  0000 C CNN
+	1    6850 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5462D126
+P 6850 4700
+F 0 "C?" H 6850 4800 40  0000 L CNN
+F 1 "C" H 6856 4615 40  0000 L CNN
+F 2 "" H 6888 4550 30  0000 C CNN
+F 3 "" H 6850 4700 60  0000 C CNN
+	1    6850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5462D192
+P 7200 5250
+F 0 "C?" H 7200 5350 40  0000 L CNN
+F 1 "C" H 7206 5165 40  0000 L CNN
+F 2 "" H 7238 5100 30  0000 C CNN
+F 3 "" H 7200 5250 60  0000 C CNN
+	1    7200 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5462D1C5
+P 7200 4700
+F 0 "C?" H 7200 4800 40  0000 L CNN
+F 1 "C" H 7206 4615 40  0000 L CNN
+F 2 "" H 7238 4550 30  0000 C CNN
+F 3 "" H 7200 4700 60  0000 C CNN
+	1    7200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5462D1FB
+P 7550 5250
+F 0 "C?" H 7550 5350 40  0000 L CNN
+F 1 "C" H 7556 5165 40  0000 L CNN
+F 2 "" H 7588 5100 30  0000 C CNN
+F 3 "" H 7550 5250 60  0000 C CNN
+	1    7550 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5462D226
+P 7850 5250
+F 0 "C?" H 7850 5350 40  0000 L CNN
+F 1 "C" H 7856 5165 40  0000 L CNN
+F 2 "" H 7888 5100 30  0000 C CNN
+F 3 "" H 7850 5250 60  0000 C CNN
+	1    7850 5250
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 5350 1550 1050 800 
+U 5462E882
+F0 "Audio Out" 60
+F1 "audioout.sch" 60
+F2 "LeftIn" I L 5350 1750 60 
+F3 "RightIn" I L 5350 1950 60 
+F4 "GNDPWR" I L 5350 2250 60 
+F5 "LeftOut" O R 6400 1750 60 
+F6 "RightOut" O R 6400 1950 60 
+$EndSheet
+Wire Wire Line
+	2800 1200 3300 1200
+Wire Wire Line
+	3300 1200 3300 1650
+Wire Wire Line
+	3300 1650 3700 1650
+Wire Wire Line
+	2800 1350 3250 1350
+Wire Wire Line
+	3250 1350 3250 3300
+Wire Wire Line
+	3250 3300 3650 3300
+Wire Wire Line
+	2800 1500 3200 1500
+Wire Wire Line
+	3200 1500 3200 2050
+Wire Wire Line
+	3200 2050 3700 2050
+Wire Wire Line
+	2800 1650 3150 1650
+Wire Wire Line
+	3150 1650 3150 3700
+Wire Wire Line
+	3150 3700 3650 3700
+Wire Wire Line
+	3400 3500 2800 3500
+Wire Wire Line
+	3400 1500 3400 3500
+Wire Wire Line
+	3400 3150 3650 3150
+Wire Wire Line
+	3400 1500 3700 1500
+Connection ~ 3400 3150
+Wire Wire Line
+	3450 3750 2800 3750
+Wire Wire Line
+	3450 1900 3450 3750
+Wire Wire Line
+	3450 3550 3650 3550
+Wire Wire Line
+	3450 1900 3700 1900
+Connection ~ 3450 3550
+Wire Wire Line
+	3700 1000 3500 1000
+Wire Wire Line
+	3500 1000 3500 4850
+Wire Wire Line
+	3500 2650 3650 2650
+Wire Wire Line
+	3700 1150 3550 1150
+Wire Wire Line
+	3550 1150 3550 4100
+Wire Wire Line
+	3550 2800 3650 2800
+Wire Wire Line
+	3700 1300 3600 1300
+Wire Wire Line
+	3600 1300 3600 5550
+Wire Wire Line
+	3600 2950 3650 2950
+Wire Wire Line
+	3500 4850 3300 4850
+Connection ~ 3500 2650
+Wire Wire Line
+	2350 5550 7850 5550
+Wire Wire Line
+	2350 5200 2350 6250
+Wire Wire Line
+	1650 5200 2450 5200
+Connection ~ 3600 2950
+Wire Wire Line
+	2000 6250 2450 6250
+Connection ~ 2350 5550
+Wire Wire Line
+	2450 6000 2200 6000
+Wire Wire Line
+	2200 4850 2200 6100
+Wire Wire Line
+	2200 4850 2450 4850
+Connection ~ 2350 6250
+Wire Wire Line
+	2200 6100 2000 6100
+Connection ~ 2200 6000
+Wire Wire Line
+	3500 4200 1500 4200
+Wire Wire Line
+	1500 4200 1500 3350
+Wire Wire Line
+	1500 3350 1850 3350
+Connection ~ 3500 4200
+Wire Wire Line
+	1650 5200 1650 3650
+Wire Wire Line
+	1650 3650 1850 3650
+Connection ~ 2350 5200
+Connection ~ 3600 5550
+Wire Wire Line
+	4300 5500 4300 5550
+Connection ~ 4300 5550
+Wire Wire Line
+	5100 5550 5100 5450
+Wire Wire Line
+	5100 4300 5100 4650
+Wire Wire Line
+	4300 4850 4300 5000
+Wire Wire Line
+	4300 4950 4700 4950
+Connection ~ 4300 4950
+Wire Wire Line
+	4700 5150 4700 5600
+Wire Wire Line
+	4300 4900 4000 4900
+Wire Wire Line
+	4000 4900 4000 5100
+Connection ~ 4300 4900
+Wire Wire Line
+	4300 4350 4300 4300
+Wire Wire Line
+	3500 4300 7850 4300
+Connection ~ 3500 4300
+Connection ~ 4300 4300
+Wire Wire Line
+	4000 5500 4000 5550
+Connection ~ 4000 5550
+Wire Wire Line
+	5700 5050 5750 5050
+Wire Wire Line
+	1600 4100 6350 4100
+Wire Wire Line
+	6350 4100 6350 5600
+Wire Wire Line
+	6350 5050 6250 5050
+Connection ~ 3550 2800
+Wire Wire Line
+	1600 4100 1600 3500
+Wire Wire Line
+	1600 3500 1850 3500
+Connection ~ 3550 4100
+Wire Wire Line
+	6350 5600 4700 5600
+Connection ~ 6350 5050
+Wire Wire Line
+	6850 5550 6850 5450
+Connection ~ 5100 5550
+Wire Wire Line
+	7200 5550 7200 5450
+Connection ~ 6850 5550
+Wire Wire Line
+	7550 5550 7550 5450
+Connection ~ 7200 5550
+Wire Wire Line
+	7850 5550 7850 5450
+Connection ~ 7550 5550
+Wire Wire Line
+	7200 4900 7200 5050
+Wire Wire Line
+	6850 4900 6850 5050
+Wire Wire Line
+	6350 5000 6850 5000
+Connection ~ 6850 5000
+Connection ~ 6350 5000
+Wire Wire Line
+	6850 4950 7200 4950
+Connection ~ 6850 4950
+Connection ~ 7200 4950
+Wire Wire Line
+	6850 4300 6850 4500
+Connection ~ 5100 4300
+Wire Wire Line
+	7200 4300 7200 4500
+Connection ~ 6850 4300
+Wire Wire Line
+	7550 4300 7550 5050
+Connection ~ 7200 4300
+Wire Wire Line
+	7850 4300 7850 5050
+Connection ~ 7550 4300
+Wire Wire Line
+	3600 2450 5250 2450
+Connection ~ 3600 2450
+Wire Wire Line
+	5250 2450 5250 2250
+Wire Wire Line
+	5250 2250 5350 2250
+Wire Wire Line
+	4400 1750 5350 1750
+Wire Wire Line
+	5350 1950 4800 1950
+Wire Wire Line
+	4800 1950 4800 3400
+Wire Wire Line
+	4800 3400 4400 3400
 $EndSCHEMATC
