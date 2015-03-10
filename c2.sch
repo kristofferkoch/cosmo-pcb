@@ -31,7 +31,7 @@ LIBS:valves
 LIBS:ssm2164
 LIBS:c2
 LIBS:c2-cache
-EELAYER 25 0
+EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -104,21 +104,6 @@ F8 "Bin" I L 5700 3500 60
 F9 "Out" O R 6450 3200 60 
 $EndSheet
 $Sheet
-S 3700 900  1150 950 
-U 5461D324
-F0 "Audio Input Stage" 60
-F1 "audioin.sch" 60
-F2 "ALeftIn" I L 3700 1000 60 
-F3 "Gnd" I L 3700 1700 60 
-F4 "ALeftOut" O R 4850 1000 60 
-F5 "ARightIn" I L 3700 1150 60 
-F6 "ARightOut" O R 4850 1150 60 
-F7 "BLeftIn" I L 3700 1300 60 
-F8 "BLeftOut" O R 4850 1300 60 
-F9 "BRightIn" I L 3700 1450 60 
-F10 "BRightOut" O R 4850 1450 60 
-$EndSheet
-$Sheet
 S 3200 5800 850  400 
 U 5461FD7D
 F0 "Power In" 60
@@ -137,17 +122,6 @@ F 1 "Raspberry Pi" V 1800 5100 50  0000 C CNN
 F 2 "" H 1800 4150 60  0000 C CNN
 F 3 "" H 1800 4150 60  0000 C CNN
 	1    1800 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L TL074 U?
-U 4 1 54627346
-P 7250 4850
-F 0 "U?" H 7300 5050 60  0000 C CNN
-F 1 "TL074" H 7400 4650 50  0000 C CNN
-F 2 "" H 7250 4850 60  0000 C CNN
-F 3 "" H 7250 4850 60  0000 C CNN
-	4    7250 4850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -271,140 +245,18 @@ F4 "GNDPWR" I L 7400 2050 60
 F5 "LeftOut" O R 8450 1550 60 
 F6 "RightOut" O R 8450 1750 60 
 $EndSheet
-$Comp
-L USB-MICRO-B CON?
-U 1 1 54633201
-P 10300 1700
-F 0 "CON?" H 10000 2050 50  0000 C CNN
-F 1 "USB-MICRO-B" H 10150 1350 50  0000 C CNN
-F 2 "" H 10300 1600 50  0000 C CNN
-F 3 "" H 10300 1600 50  0000 C CNN
-	1    10300 1700
-	1    0    0    -1  
-$EndComp
-NoConn ~ 9800 1800
-$Comp
-L R R?
-U 1 1 5463397A
-P 10950 2250
-F 0 "R?" V 11030 2250 40  0000 C CNN
-F 1 "R" V 10957 2251 40  0000 C CNN
-F 2 "" V 10880 2250 30  0000 C CNN
-F 3 "" H 10950 2250 30  0000 C CNN
-	1    10950 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 54634323
-P 9500 2250
-F 0 "R?" V 9580 2250 40  0000 C CNN
-F 1 "R" V 9507 2251 40  0000 C CNN
-F 2 "" V 9430 2250 30  0000 C CNN
-F 3 "" H 9500 2250 30  0000 C CNN
-	1    9500 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L USB-MICRO-B CON?
-U 1 1 54635482
-P 6150 6000
-F 0 "CON?" H 5850 6350 50  0000 C CNN
-F 1 "USB-MICRO-B" H 6000 5650 50  0000 C CNN
-F 2 "" H 6150 5900 50  0000 C CNN
-F 3 "" H 6150 5900 50  0000 C CNN
-	1    6150 6000
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5650 5900
-NoConn ~ 5650 6000
-NoConn ~ 5650 6100
-$Comp
-L R R?
-U 1 1 54635AB6
-P 6750 6800
-F 0 "R?" V 6830 6800 40  0000 C CNN
-F 1 "R" V 6757 6801 40  0000 C CNN
-F 2 "" V 6680 6800 30  0000 C CNN
-F 3 "" H 6750 6800 30  0000 C CNN
-	1    6750 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L USB-MICRO-B CON?
-U 1 1 5463718D
-P 1500 1000
-F 0 "CON?" H 1200 1350 50  0000 C CNN
-F 1 "USB-MICRO-B" H 1350 650 50  0000 C CNN
-F 2 "" H 1500 900 50  0000 C CNN
-F 3 "" H 1500 900 50  0000 C CNN
-	1    1500 1000
-	-1   0    0    1   
-$EndComp
-$Comp
-L USB-MICRO-B CON?
-U 1 1 54637C32
-P 1500 1850
-F 0 "CON?" H 1200 2200 50  0000 C CNN
-F 1 "USB-MICRO-B" H 1350 1500 50  0000 C CNN
-F 2 "" H 1500 1750 50  0000 C CNN
-F 3 "" H 1500 1750 50  0000 C CNN
-	1    1500 1850
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R?
-U 1 1 54637DAA
-P 600 2550
-F 0 "R?" V 680 2550 40  0000 C CNN
-F 1 "R" V 607 2551 40  0000 C CNN
-F 2 "" V 530 2550 30  0000 C CNN
-F 3 "" H 600 2550 30  0000 C CNN
-	1    600  2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 54637EE7
-P 800 2550
-F 0 "R?" V 880 2550 40  0000 C CNN
-F 1 "R" V 807 2551 40  0000 C CNN
-F 2 "" V 730 2550 30  0000 C CNN
-F 3 "" H 800 2550 30  0000 C CNN
-	1    800  2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 54637F14
-P 2100 2550
-F 0 "R?" V 2180 2550 40  0000 C CNN
-F 1 "R" V 2107 2551 40  0000 C CNN
-F 2 "" V 2030 2550 30  0000 C CNN
-F 3 "" H 2100 2550 30  0000 C CNN
-	1    2100 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 1000 5350 1000
 Wire Wire Line
 	5350 1000 5350 1450
 Wire Wire Line
 	5350 1450 5750 1450
 Wire Wire Line
-	4850 1150 5300 1150
-Wire Wire Line
 	5300 1150 5300 3100
 Wire Wire Line
 	5300 3100 5700 3100
 Wire Wire Line
-	4850 1300 5250 1300
-Wire Wire Line
 	5250 1300 5250 1850
 Wire Wire Line
 	5250 1850 5750 1850
-Wire Wire Line
-	4850 1450 5200 1450
 Wire Wire Line
 	5200 1450 5200 3500
 Wire Wire Line
@@ -449,9 +301,9 @@ Wire Wire Line
 	5550 4650 5350 4650
 Connection ~ 5550 2450
 Wire Wire Line
-	4400 5350 10950 5350
+	4400 5350 9900 5350
 Wire Wire Line
-	4400 5000 4400 6050
+	4400 6050 4400 5000
 Wire Wire Line
 	3250 5000 4500 5000
 Connection ~ 5650 2750
@@ -469,9 +321,9 @@ Wire Wire Line
 	4250 5900 4050 5900
 Connection ~ 4250 5800
 Wire Wire Line
-	5550 4000 3550 4000
+	3550 4000 5550 4000
 Wire Wire Line
-	3550 4000 3550 3150
+	3550 1600 3550 4000
 Wire Wire Line
 	3550 3150 3900 3150
 Connection ~ 5550 4000
@@ -519,7 +371,7 @@ Wire Wire Line
 	8400 4850 8300 4850
 Connection ~ 5600 2600
 Wire Wire Line
-	3650 3900 3650 3300
+	3650 1700 3650 3900
 Wire Wire Line
 	3650 3300 3900 3300
 Connection ~ 5600 3900
@@ -563,7 +415,7 @@ Wire Wire Line
 	9900 4100 9900 4850
 Connection ~ 9600 4100
 Wire Wire Line
-	5650 2250 7300 2250
+	5650 2250 9550 2250
 Connection ~ 5650 2250
 Wire Wire Line
 	7300 2250 7300 2050
@@ -578,160 +430,13 @@ Wire Wire Line
 Wire Wire Line
 	6850 3200 6450 3200
 Wire Wire Line
-	3700 1700 3250 1700
-Wire Wire Line
-	3250 1700 3250 5000
+	3250 1800 3250 5000
 Connection ~ 3700 5000
-Wire Wire Line
-	10800 1500 10950 1500
-Wire Wire Line
-	10950 1500 10950 2000
-Wire Wire Line
-	10800 1600 10950 1600
-Connection ~ 10950 1600
-Wire Wire Line
-	10800 1800 10950 1800
-Connection ~ 10950 1800
-Wire Wire Line
-	10800 1900 10950 1900
-Connection ~ 10950 1900
-Wire Wire Line
-	10950 5350 10950 2500
-Connection ~ 9900 5350
-Wire Wire Line
-	9800 1900 9700 1900
-Wire Wire Line
-	9700 1900 9700 2600
-Wire Wire Line
-	9500 2600 10950 2600
-Connection ~ 10950 2600
-Wire Wire Line
-	9500 2600 9500 2500
-Connection ~ 9700 2600
-Wire Wire Line
-	9500 2000 9500 1500
-Wire Wire Line
-	9500 1500 9800 1500
-Wire Wire Line
-	8450 1550 8600 1550
-Wire Wire Line
-	8600 1550 8600 1600
-Wire Wire Line
-	8600 1600 9800 1600
-Wire Wire Line
-	9800 1700 8600 1700
-Wire Wire Line
-	8600 1700 8600 1750
-Wire Wire Line
-	8600 1750 8450 1750
-Wire Wire Line
-	4300 6050 4300 7100
 Connection ~ 4300 6050
 Wire Wire Line
-	2000 1000 3150 1000
-Wire Wire Line
-	3150 1000 3150 1150
-Wire Wire Line
-	3150 1150 3700 1150
-Wire Wire Line
-	600  2800 600  2900
-Wire Wire Line
-	600  2900 3250 2900
-Wire Wire Line
-	2100 2900 2100 2800
-Wire Wire Line
-	800  2800 800  2900
-Connection ~ 800  2900
-Wire Wire Line
-	800  1650 800  2300
-Wire Wire Line
-	800  2050 1000 2050
-Wire Wire Line
-	800  1650 1000 1650
-Connection ~ 800  2050
-Wire Wire Line
-	1000 1750 800  1750
-Connection ~ 800  1750
-Wire Wire Line
-	1000 1950 800  1950
-Connection ~ 800  1950
-Wire Wire Line
-	600  2300 600  800 
-Wire Wire Line
-	600  800  1000 800 
-Wire Wire Line
-	1000 900  600  900 
-Connection ~ 600  900 
-Wire Wire Line
-	1000 1100 600  1100
-Connection ~ 600  1100
-Wire Wire Line
-	1000 1200 600  1200
-Connection ~ 600  1200
-Wire Wire Line
-	2000 1850 3100 1850
-Wire Wire Line
-	3100 1850 3100 1450
-Wire Wire Line
-	3100 1450 3700 1450
-Wire Wire Line
-	2000 1950 3000 1950
-Wire Wire Line
-	3000 1950 3000 1300
-Wire Wire Line
-	3000 1300 3700 1300
-Wire Wire Line
-	2100 2300 2100 1200
-Wire Wire Line
-	2100 1200 2000 1200
-Wire Wire Line
-	2000 2050 2100 2050
-Connection ~ 2100 2050
-Wire Wire Line
-	2250 2900 2250 800 
-Wire Wire Line
-	2250 800  2000 800 
-Connection ~ 2100 2900
-Wire Wire Line
-	2000 1650 2250 1650
-Connection ~ 2250 1650
-NoConn ~ 2000 900 
-NoConn ~ 2000 1750
-Connection ~ 3250 2900
-Connection ~ 2250 2900
-Wire Wire Line
-	3700 1000 3300 1000
-Wire Wire Line
-	3300 1000 3300 1100
-Wire Wire Line
-	3300 1100 2000 1100
-Wire Wire Line
-	6750 7100 6750 7050
-Wire Wire Line
-	1450 7100 6750 7100
-Wire Wire Line
-	6750 6550 6750 5800
-Wire Wire Line
-	6750 5800 6650 5800
-Wire Wire Line
-	6650 5900 6750 5900
-Connection ~ 6750 5900
-Wire Wire Line
-	6650 6100 6750 6100
-Connection ~ 6750 6100
-Wire Wire Line
-	6650 6200 6750 6200
-Connection ~ 6750 6200
-Wire Wire Line
-	5650 5800 5350 5800
-Wire Wire Line
-	5650 6200 5650 7100
-Connection ~ 5650 7100
-Wire Wire Line
-	1450 7100 1450 4550
+	1450 4550 1450 7100
 Wire Wire Line
 	1450 4550 1550 4550
-Connection ~ 4300 7100
 Wire Wire Line
 	1550 6050 1450 6050
 Connection ~ 1450 6050
@@ -756,7 +461,7 @@ Wire Wire Line
 	2050 5750 2150 5750
 Connection ~ 2150 5750
 Wire Wire Line
-	1550 4150 1150 4150
+	1150 4150 1550 4150
 NoConn ~ 1150 4150
 Text Label 1450 4150 2    28   ~ 0
 rp3v3
@@ -860,4 +565,282 @@ Wire Wire Line
 	2400 5950 2050 5950
 Wire Wire Line
 	2400 6050 2050 6050
+Wire Wire Line
+	4300 7100 4300 6050
+Wire Wire Line
+	1450 7100 5600 7100
+$Sheet
+S 3700 900  1300 1150
+U 5461D324
+F0 "Audio Input Stage" 60
+F1 "audioin.sch" 60
+F2 "ALeftIn" I L 3700 1000 60 
+F3 "Gnd" I L 3700 1700 60 
+F4 "ALeftOut" O R 5000 1000 60 
+F5 "ARightIn" I L 3700 1150 60 
+F6 "ARightOut" O R 5000 1150 60 
+F7 "BLeftIn" I L 3700 1300 60 
+F8 "BLeftOut" O R 5000 1300 60 
+F9 "BRightIn" I L 3700 1450 60 
+F10 "BRightOut" O R 5000 1450 60 
+F11 "V+" I L 3700 1600 60 
+F12 "V-" I L 3700 1800 60 
+$EndSheet
+Wire Wire Line
+	3250 1800 3700 1800
+Wire Wire Line
+	3650 1700 3700 1700
+Connection ~ 3650 3300
+Wire Wire Line
+	1900 1600 3700 1600
+Connection ~ 3550 3150
+Wire Wire Line
+	5000 1000 5350 1000
+Wire Wire Line
+	5000 1150 5300 1150
+Wire Wire Line
+	5000 1300 5250 1300
+Wire Wire Line
+	5000 1450 5200 1450
+$Comp
+L CONN_02X20 P?
+U 1 1 54FDDD10
+P 1800 5100
+F 0 "P?" H 1800 6150 50  0000 C CNN
+F 1 "Raspberry Pi" V 1800 5100 50  0000 C CNN
+F 2 "" H 1800 4150 60  0000 C CNN
+F 3 "" H 1800 4150 60  0000 C CNN
+	1    1800 5100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1150 4150
+Text Label 1450 4150 2    28   ~ 0
+rp3v3
+NoConn ~ 1150 4250
+NoConn ~ 1150 4350
+NoConn ~ 1150 4450
+NoConn ~ 1150 4650
+NoConn ~ 1150 4750
+NoConn ~ 1150 4850
+Text Label 1500 4250 2    28   ~ 0
+rpgpio2
+Text Label 1500 4350 2    28   ~ 0
+rpgpio3
+NoConn ~ 2400 4150
+Text Label 2250 4150 2    28   ~ 0
+rp5v
+NoConn ~ 1150 5050
+NoConn ~ 1150 5150
+NoConn ~ 1150 5250
+NoConn ~ 1150 5450
+NoConn ~ 1150 5550
+NoConn ~ 1150 5650
+NoConn ~ 1150 5750
+NoConn ~ 1150 5850
+NoConn ~ 1150 5950
+NoConn ~ 2400 4450
+NoConn ~ 2400 4550
+NoConn ~ 2400 4650
+NoConn ~ 2400 4850
+NoConn ~ 2400 4950
+NoConn ~ 2400 5150
+NoConn ~ 2400 5250
+NoConn ~ 2400 5350
+NoConn ~ 2400 5450
+NoConn ~ 2400 5650
+NoConn ~ 2400 5850
+NoConn ~ 2400 5950
+NoConn ~ 2400 6050
+$Comp
+L CONN_2 P?
+U 1 1 54FDE5DF
+P 6100 5900
+F 0 "P?" V 6050 5900 40  0000 C CNN
+F 1 "rpipower" V 6150 5900 40  0000 C CNN
+F 2 "" H 6100 5900 60  0000 C CNN
+F 3 "" H 6100 5900 60  0000 C CNN
+	1    6100 5900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5350 5800 5750 5800
+Wire Wire Line
+	5600 7100 5600 6000
+Wire Wire Line
+	5600 6000 5750 6000
+Connection ~ 4300 7100
+$Comp
+L CONN_3 K?
+U 1 1 54FDF3E1
+P 1400 2350
+F 0 "K?" V 1350 2350 50  0000 C CNN
+F 1 "mixpot" V 1450 2350 40  0000 C CNN
+F 2 "" H 1400 2350 60  0000 C CNN
+F 3 "" H 1400 2350 60  0000 C CNN
+	1    1400 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54FDF63D
+P 1900 2800
+F 0 "R?" V 1980 2800 40  0000 C CNN
+F 1 "47k" V 1907 2801 40  0000 C CNN
+F 2 "" V 1830 2800 30  0000 C CNN
+F 3 "" H 1900 2800 30  0000 C CNN
+	1    1900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54FDF648
+P 1900 1850
+F 0 "R?" V 1980 1850 40  0000 C CNN
+F 1 "47k" V 1907 1851 40  0000 C CNN
+F 2 "" V 1830 1850 30  0000 C CNN
+F 3 "" H 1900 1850 30  0000 C CNN
+	1    1900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P?
+U 1 1 54FF407F
+P 2750 5950
+F 0 "P?" V 2700 5950 40  0000 C CNN
+F 1 "CONN_2" V 2800 5950 40  0000 C CNN
+F 2 "" H 2750 5950 60  0000 C CNN
+F 3 "" H 2750 5950 60  0000 C CNN
+	1    2750 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 5850 3100 5900
+Wire Wire Line
+	3100 5900 3200 5900
+Wire Wire Line
+	3100 6050 3200 6050
+$Comp
+L C C?
+U 1 1 54FF632B
+P 2200 2750
+F 0 "C?" H 2200 2850 40  0000 L CNN
+F 1 "1µ" H 2206 2665 40  0000 L CNN
+F 2 "" H 2238 2600 30  0000 C CNN
+F 3 "" H 2200 2750 60  0000 C CNN
+	1    2200 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3050 1900 3150
+Wire Wire Line
+	1900 3150 3250 3150
+Connection ~ 3250 3150
+Wire Wire Line
+	2200 2950 2200 3150
+Connection ~ 2200 3150
+Connection ~ 3550 1600
+Wire Wire Line
+	1750 2350 3000 2350
+Wire Wire Line
+	3000 2350 3000 3650
+Wire Wire Line
+	3000 3650 3900 3650
+Wire Wire Line
+	1900 2550 1900 2450
+Wire Wire Line
+	1750 2450 2200 2450
+Wire Wire Line
+	1750 2250 1900 2250
+Wire Wire Line
+	1900 2250 1900 2100
+Wire Wire Line
+	2200 2450 2200 2550
+Connection ~ 1900 2450
+$Comp
+L CONN_4X2 P?
+U 1 1 54FF710F
+P 2950 1150
+F 0 "P?" H 2950 1400 50  0000 C CNN
+F 1 "audioin" V 2950 1150 40  0000 C CNN
+F 2 "" H 2950 1150 60  0000 C CNN
+F 3 "" H 2950 1150 60  0000 C CNN
+	1    2950 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3150 2400 1000
+Wire Wire Line
+	2400 1000 2550 1000
+Connection ~ 2400 3150
+Wire Wire Line
+	2550 1100 2400 1100
+Connection ~ 2400 1100
+Wire Wire Line
+	2550 1200 2400 1200
+Connection ~ 2400 1200
+Wire Wire Line
+	2550 1300 2400 1300
+Connection ~ 2400 1300
+Wire Wire Line
+	3700 1000 3350 1000
+Wire Wire Line
+	3700 1150 3600 1150
+Wire Wire Line
+	3600 1150 3600 1100
+Wire Wire Line
+	3600 1100 3350 1100
+Wire Wire Line
+	3700 1300 3550 1300
+Wire Wire Line
+	3550 1300 3550 1200
+Wire Wire Line
+	3550 1200 3350 1200
+Wire Wire Line
+	3700 1450 3450 1450
+Wire Wire Line
+	3450 1450 3450 1300
+Wire Wire Line
+	3450 1300 3350 1300
+$Comp
+L CONN_2X2 P?
+U 1 1 54FF7C11
+P 9050 1650
+F 0 "P?" H 9050 1800 50  0000 C CNN
+F 1 "audioout" H 9060 1520 40  0000 C CNN
+F 2 "" H 9050 1650 60  0000 C CNN
+F 3 "" H 9050 1650 60  0000 C CNN
+	1    9050 1650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 1550 8550 1550
+Wire Wire Line
+	8550 1550 8550 1600
+Wire Wire Line
+	8550 1600 8650 1600
+Wire Wire Line
+	8450 1750 8550 1750
+Wire Wire Line
+	8550 1750 8550 1700
+Wire Wire Line
+	8550 1700 8650 1700
+Wire Wire Line
+	9550 2250 9550 1600
+Wire Wire Line
+	9550 1600 9450 1600
+Connection ~ 7300 2250
+Wire Wire Line
+	9450 1700 9550 1700
+Connection ~ 9550 1700
+$Comp
+L TL074 U?
+U 1 1 54FF9B42
+P 7250 4850
+F 0 "U?" H 7300 5050 60  0000 C CNN
+F 1 "TL074" H 7400 4650 50  0000 C CNN
+F 2 "" H 7250 4850 60  0000 C CNN
+F 3 "" H 7250 4850 60  0000 C CNN
+	1    7250 4850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
