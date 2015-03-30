@@ -60,7 +60,7 @@
     (grid_origin 18.415 66.04)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 3178497)
+      (layerselection 284196865)
       (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.150000)
@@ -84,7 +84,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory kicad-output/))
   )
 
   (net 0 "")
